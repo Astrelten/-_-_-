@@ -1,0 +1,55 @@
+
+@font-face {
+    font-family: 'NEXT ART';
+    src:url('../fonts/NEXT_ART_Light.woff2') format('woff2'),
+        url('../fonts/NEXT_ART_Light.woff') format('woff'),
+        url('../fonts/NEXT_ART_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src:url('../fonts/NEXT_ART_Regular.woff2') format('woff2'),
+        url('../fonts/NEXT_ART_Regular.woff') format('woff'),
+        url('../fonts/NEXT_ART_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src:url('../fonts/NEXT_ART_Semibold.woff2') format('woff2'),
+        url('../fonts/NEXT_ART_Semibold.woff') format('woff'),
+        url('../fonts/NEXT_ART_SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src:url('../../fonts/NEXT_ART_Bold.woff') format('woff2'),
+        url('../fonts/NEXT_ART_Bold.woff') format('woff'),
+        url('../fonts/NEXT_ART_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src:url('../fonts/NEXT_ART_Heavy.woff2') format('woff2'),
+        url('../fonts/NEXT_ART_Heavy.woff') format('woff'),
+        url('../fonts/NEXT_ART_Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}

@@ -1,0 +1,35 @@
+@import "_button";
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+@import "blocks/_header";
+@import "blocks/_start";
+@import "blocks/_about";
+@import "blocks/_offer";
+@import "blocks/_popular";
+@import "blocks/_blog";
+@import "blocks/_gallery";
+@import "blocks/_newsletter";
+@import "blocks/_footer";
+@import "_media";
+
+
+
+// body {
+//     margin: 0;
+//     padding: 0;
+//     overflow-x: hidden; 
+//     width: 100%;
+// }
+
+// .container {
+//     width: 100%;
+//     max-width: 100%;
+//     overflow: hidden; 
+// }
+
+// main, section, div {
+//     max-width: 100%;
+//     box-sizing: border-box;
+// }

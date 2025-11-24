@@ -1,0 +1,50 @@
+@import "_variables";
+@import "_mixins";
+
+.btn { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $primary-color;
+  border-radius: 4px;
+  @include regular-button-text;
+  padding: 0;
+  color: $posts-color;
+  background:  $primary-color;
+  transition: all 0.3s;
+  cursor: pointer;
+
+      &:hover {
+      color:  $primary-color;
+      background: $posts-color;
+      }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1180px;
+}
+
+.body {
+    margin: 0
+}
+
+.subtitle{
+  @include accent-h2-text;
+  color: $accent-color;
+  margin: 0px;
+  padding-bottom: 8px;
+}
+
+  
+.title {
+  @include h2-text;
+  color: $secondary-color;
+  margin-top: 0px;
+}
