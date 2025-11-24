@@ -1,0 +1,184 @@
+ @import "../_mixins";
+ @import "../_variables";
+
+.popular{
+    padding: 81px 0px 99px;
+
+    &__content{
+        text-align: center;
+        }
+
+    &__btn {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 244px;
+        height: 52px;
+        }
+
+    &__content{
+        padding-bottom: 49px;
+    }
+
+    &__title{
+        margin: 0 0;
+    }
+        
+    .swiper{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        display: block;
+
+        &-wapper{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+            box-sizing: content-box;
+        }
+
+        &-slide, swiper-slide {
+            flex-shrink: 0;
+            max-width: 380px;
+            max-height: 500px;
+            position: relative;
+            transition-property: transform;
+            display: block;
+        }
+
+        &-backface-hidden, &-slide {
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+    }
+
+    &__item {
+    position: relative;
+    flex: 1;   
+    overflow: hidden;
+    border-radius: 32px;
+
+        &:hover .overlay, &:focus .overlay {
+        top: 0
+        }
+    }
+
+    &__media {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+    }
+
+    &__stars {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px 0 0 4px;
+        width: 65px;
+        height: 32px;
+        @include popular-rating;
+        color: $primary-color;
+        background: rgba(253, 253, 253, .4);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+
+        &-img {
+            margin-right: 7px;
+            width: 17px;
+            height: 16px;
+            transform: translateY(-2px);
+            margin-left: 3px;
+            margin-top: 5px;
+        }
+    }
+
+      &__pic {
+            flex: 1; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        &__img {
+            object-fit: cover;
+            object-position: center;
+        }
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 82%;
+        display: flex;
+        flex-direction: column;
+        padding: 21px 32px 20px;
+        height: 100%;
+        box-sizing: border-box;
+        background: rgba(255, 255, 255, .2);
+        transition: all 2s ease-in-out;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 38px;
+        }
+
+        &__descr {
+            @include popular-card-text;
+            color: #fdfdfd;
+        }
+
+        &__btn {
+            margin-top: auto;
+            width: 176px;
+            height: 44px;
+        }
+
+        &__title {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #fdfdfd;
+        }
+
+        &__name {
+            display: block;
+            @include popular-card-tilte;
+            color: #fdfdfd;
+
+            &-descr{
+                @include popular-card-subtitle;
+            }
+        }
+
+                
+        &__price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            width: 86px;
+            height: 40px;
+            @include popular-price;
+            color: $posts-color;
+            background: rgba(255, 255, 255, .3);
+            padding-top: 1px;
+        }
+    }
+
+}

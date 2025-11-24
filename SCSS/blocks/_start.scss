@@ -1,0 +1,161 @@
+ @import "../_mixins";
+ @import "../_variables";
+
+.start {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 463px;
+    background-image: url("/images/start/start-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__info {
+        padding: 460px 0 81px;
+    }
+
+    &__title {
+        margin: 0 0 39px;
+        @include h1-text;
+        color: $posts-color;
+        max-width: 1080px;
+    }
+
+    &__search {
+        display: flex;
+        border-radius: 10px;
+        padding: 41px 42px 38px;
+        background: rgba(255,255,255,.2);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        gap: 24px
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        position: relative;
+    }
+
+    &__span {
+        padding: 8px 0 0 9px;
+        @include form-light-text;
+        color: $posts-color;
+    }
+
+    &__location,
+    &__quantity {
+        border: 1px solid #e1e3e4;
+        border-radius: 8px;
+        padding: 3px 17px 0px;
+        height: 52px;
+        @include form-bold-text;
+        color: $posts-color; 
+        background-color: rgba(0,0,0,0);
+        
+        appearance: none;
+        background-image: url("../../images/start/start_form_arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        background-size: 16px;
+        cursor: pointer;
+        
+      
+        &:valid {
+            color: $posts-color;
+        }
+        
+      
+        &:invalid {
+            color: $posts-color; 
+        }
+        
+        option {
+            color: $posts-color; 
+            background: $primary-color; 
+            padding: 10px;
+            
+            &:hover,
+            &:focus {
+                background: #fff  !important; 
+                color: #1a3e2f !important; 
+            }
+        }
+        
+        option:checked {
+            background: $primary-color; 
+            color: #fff;
+        }
+    
+        option[value=""][disabled] {
+            display: none;
+        }
+        
+        &:focus {
+            outline: none;
+            border-color: lighten($posts-color, 20%);
+        }
+    }
+
+    &__block-date {
+        display: flex;
+        border: 1px solid #e1e3e4;
+        border-radius: 8px;
+    }
+
+    &__date {
+        flex: 1;
+        border: 0;
+        padding: 0 13px;
+        height: 52px;
+        @include form-bold-text;
+        color: $posts-color;
+        background-color: rgba(0,0,0,0);
+ 
+        &::-webkit-datetime-edit-fields-wrapper {
+            color: $posts-color;
+        }
+        
+        &::-webkit-calendar-picker-indicator {
+          cursor: pointer;
+          appearance: none;
+          background-image: url("../../images/start/start_form_date.svg");
+        }
+        
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__search-program {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $posts-color;
+        border-radius: 4px;
+        padding: 0;
+        width: 213px;
+        height: 52px;
+        @include form-bold-text;
+        color: $primary-color;
+        background: $posts-color;
+        transition: all .3s;
+        cursor: pointer;
+        
+        &:hover {
+            border: 1px solid $posts-color;
+            color: $posts-color;
+            background: $primary-color;
+        }
+    }
+
+    &__date::placeholder {
+        @include form-bold-text;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: $posts-color;
+    }
+}
+

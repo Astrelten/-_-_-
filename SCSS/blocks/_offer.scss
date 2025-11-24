@@ -1,0 +1,115 @@
+ @import "../_mixins";
+ @import "../_variables";
+
+    
+.offer{
+    background-color: $background-color-odd;
+    padding: 77px 0px 99px;
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px
+        }
+
+        &__subtitle{
+            padding: 4px 0 7px;
+        }
+
+        &__content {
+            flex: 1;
+            max-width: 580px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+        }
+
+        &__text {
+            margin: 0px;
+            @include regular-text;
+            color: $secondary-color;
+            padding-bottom: 29px;
+        }
+
+        &__items {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 40px;
+        padding-bottom: 26px;
+
+        }
+
+        &__item {
+            position: relative;
+            padding-left: 66px;
+            @include discription-regular-text;
+            color: #000;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    width: 50px;
+                    height: 50px
+                }
+        }
+
+        &__item:nth-of-type(1)::before {
+            background-image: url(../../images/offer/offer-icon1.svg);
+        }
+
+        &__item:nth-of-type(2)::before {
+            background-image: url(../../images/offer/offer-icon2.svg);
+        }
+
+        &__item:nth-of-type(3)::before {
+            background-image: url(../../images/offer/offer-icon3.svg);
+        }
+
+        &__item-title {
+            display: block;
+            margin: 0;
+            @include item-title-text;
+            color: $secondary-color;
+            padding-bottom: 4px;
+        }
+
+        &__price {
+            width: 236px;
+            height: 52px;
+        }
+
+        &__media {
+        display: grid;
+        flex: 1;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        max-width: 510px;
+        gap: 10px;
+        }
+
+        &__img{
+            width: 250px;
+            height: 250px;
+            max-width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            &:nth-of-type(1), &:nth-of-type(4){
+                border-radius: 0px 50px 0px 50px;
+            }
+
+            &:nth-of-type(2), &:nth-of-type(3){
+                border-radius: 50px 0px 50px 0px;
+            }
+        }
+}
+
+
+
+
+

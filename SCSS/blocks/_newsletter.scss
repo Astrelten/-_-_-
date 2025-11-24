@@ -1,0 +1,93 @@
+ @import "../_mixins";
+ @import "../_variables";
+
+.newsletter{
+    
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -96px;
+        border-radius: 6px;
+        padding: 40px 100px 39px;
+        box-shadow: 0 0 15px 0 rgba(24,18,30,.12);
+        background: $posts-color;
+        gap: 15px
+    }
+
+    &__content {
+        flex: 0 1 380px
+    }
+
+    &__subtitle {
+        font-size: 18px
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 26px;
+    }
+
+    &__subscribe {
+        flex: 0 1 536px
+    }
+
+    &__text {
+        @include newsletter-email-title;
+        color: $secondary-color;
+        margin: 0px;
+        padding-left: 4px;
+        padding-bottom: 7px;
+    }
+
+    &__form {
+        display: flex;
+        margin-bottom: 8px;
+        gap: 16px
+    }
+
+    &__input {
+        border: none;
+        border-radius: 4px;
+        width: 280px;
+        height: 44px;
+        font-family: Nunito Sans;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: $secondary-color;
+        background: $background-color-odd;
+    
+
+        &::-moz-placeholder {
+            @include newsletter-email-placeholder;
+            color: $secondary-color;
+        }
+
+        &::placeholder {
+            @include newsletter-email-placeholder;
+            color: $secondary-color;
+        }
+    }
+
+    &__button {
+        border-radius: 4px;
+        width: 240px;
+        height: 44px;
+        letter-spacing: -0.01rem;
+    }
+
+    &__terms {
+        margin: 0;
+        @include discription-footer-regular-text;
+        color: $secondary-color;
+        letter-spacing: -0.011rem;
+        padding-left: 4px;
+    }
+
+    &__terms-link {
+        -webkit-text-decoration: underline 1px solid $secondary-color;
+        text-decoration: underline 1px solid $secondary-color
+    }
+}
