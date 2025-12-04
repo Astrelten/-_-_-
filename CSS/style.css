@@ -1375,7 +1375,7 @@ a {
     padding-top: 234px;
   }
   .start__title {
-    font-size: 28px;
+    font-size: 7vw;
     text-align: left;
   }
   .start__search {
@@ -1401,6 +1401,10 @@ a {
   .about__content {
     padding-top: 0px;
     padding-bottom: 40px;
+  }
+
+  .about__video-preview{
+    width: 100%;
   }
 
   .offer {
