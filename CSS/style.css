@@ -569,7 +569,8 @@ a {
 .popular__item:hover .overlay, .popular__item:focus .overlay {
   top: 0;
 }
-.popular__media {
+
+.popular__swiper .popular__media {
   display: flex;
   margin-bottom: 50px;
   gap: 20px;
