@@ -86,7 +86,7 @@ a {
 }
 @font-face {
   font-family: "NEXT ART";
-  src: url("../../fonts/NEXT_ART_Bold.woff") format("woff2"), url("../fonts/NEXT_ART_Bold.woff") format("woff"), url("../fonts/NEXT_ART_Bold.otf") format("opentype");
+  src: url("../fonts/NEXT_ART_Bold.woff") format("woff2"), url("../fonts/NEXT_ART_Bold.woff") format("woff"), url("../fonts/NEXT_ART_Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
