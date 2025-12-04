@@ -701,7 +701,7 @@ a {
   text-align: center;
   padding-bottom: 39px;
 }
-.blog__media {
+.blog__content .blog__media {
   margin-bottom: 49px;
 }
 .blog__btn {
