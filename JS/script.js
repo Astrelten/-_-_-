@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded", function(){
-   document.getElementById("burger").addEventListener("click",function(){
-    document.querySelector(".header").classList.toggle("open")
-   })
-
-})
-
-
 document.addEventListener('DOMContentLoaded', function() {
     function initSwipers() {
         if (window.innerWidth <= 576) {
@@ -17,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 resistanceRatio: 0
             };
             
-
             if (document.querySelector('.popular__swiper').swiper) {
                 document.querySelector('.popular__swiper').swiper.destroy(true, true);
             }
