@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth <= 576) {
             const config = {
                 slidesPerView: 'auto',
-                spaceBetween: 16,
+                spaceBetween: 0,
                 freeMode: true,
                 resistance: true,
                 resistanceRatio: 0
