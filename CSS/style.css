@@ -821,6 +821,10 @@ a {
   text-decoration: underline 1px solid #1A3E3E;
 }
 
+.blog__media {
+  margin-bottom: 49px;
+}
+
 .gallery {
   padding: 80px 0px 99px;
 }
