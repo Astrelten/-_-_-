@@ -411,4 +411,14 @@
         text-align: left;
     }
 
+    .error-page {
+        &__img {
+            max-width: 250px;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+
 }
