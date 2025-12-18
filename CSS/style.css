@@ -1195,7 +1195,7 @@ a {
 }
 
 .page-404 {
-    background-image: url("/images/start/start-bg.png");
+    background-image: url("../images/start/start-bg.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
